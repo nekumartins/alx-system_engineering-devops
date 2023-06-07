@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -name "*.html" -type f -newer ../ | xargs -I{} cp -u -n {} ..
+find . -maxdepth 1 -name "*.html" -type f -exec cp -u -n {} ../ \;
