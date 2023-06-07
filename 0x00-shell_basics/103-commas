@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -Ap1 | sed ':a;N;$!ba;s/\n/,/g'
