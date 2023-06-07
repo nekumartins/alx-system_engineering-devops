@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "./, ../, $(ls -Ap1 | paste -sd ', ' -)"
+echo "./, ../, "; ls -Ap1 | paste -sd ', ' -
