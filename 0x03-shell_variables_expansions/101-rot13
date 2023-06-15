@@ -1,2 +1,2 @@
-!/bin/bash
+#!/bin/bash
 tr 'a-m n-z' 'n-z a-m'
