@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# configure web-02 to be identical to web-01
+# This script configures a new Ubuntu machine with a custom Nginx setup
 sudo mkdir -p /var/www/html /var/www/html/error
 sudo chmod -R 755 /var/www
 echo 'Hello World!' | sudo tee /var/www/html/index.html
@@ -11,7 +11,7 @@ server_config=\
     root /var/www/html;
     index index.html index.htm index.nginx-debian.html;
     server_name _;
-    add_header X-Served-By `hostname`;
+    add_header X-Served-By $(hostname);
     location / {
         try_files \$uri \$uri/ =404;
     }
