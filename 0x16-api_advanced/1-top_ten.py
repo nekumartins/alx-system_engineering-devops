@@ -7,7 +7,7 @@ def top_ten(subreddit):
     """Print the titles of the 10 hottest posts"""
     url = "https://www.reddit.com/r/{}/hot/.json".format(subreddit)
     headers = {
-        "User-Agent": "linux:0x16.alx:v1.0.0 (by /u/Mean-Cranberry7153)"
+        "User-Agent": "webscrape:v1.0.0 (by /u/Mean-Cranberry7153)"
     }
     params = {
         "limit": 10
